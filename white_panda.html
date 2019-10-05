@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+    padding-top: 5px;
+    padding-left: 5px;
+  border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+div.gallery:hover {
+  border: 1px solid white;
+    background-color:cyan;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+   
+}
+
+.header {
+  background-color: snow;
+  padding: 5px;
+box-shadow: 0px 10px 10px gray;
+    width: 100%;
+    margin-bottom: 50px;
+  
+}
+  .footer {
+  
+  padding: 5px;
+  
+}
+    .border1
+    {
+        border:1px solid grey;
+        border-radius: 10px;
+        padding: 10px;
+        width: 15%; 
+        margin-bottom: 60px;
+    }
+    .border2
+    {
+        border:1px solid grey;
+        border-radius: 10px;
+        padding: 5px;
+        width: 30%;
+        margin-left: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align-last: center;
+    }
+    
+    .twentypoint {
+    font-family: Arial, Helvetica, sans-serif;
+        line-height: 20pt;
+    }
+div.desc {
+  padding: 15px;
+  text-align: center;
+    
+}
+
+* {
+  box-sizing: border-box;
+}
+    img{
+      border-radius: 50%;
+       
+    }
+    .text{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    body {
+    background-color: white;
+    background-repeat: no-repeat;
+       
+       
+    
+}
+    .title
+    {
+        float:left;
+        border:10px solid white;
+    }
+    .n1
+    {
+        float:right;
+        padding-left: 10px;
+        padding-right: 10px;
+      
+        
+        
+    }
+    .full
+    {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .previous {
+  background-color: darkgrey;
+  color: black;
+        height: 50px;
+        float:left;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius:50%;
+  padding: 16px 32px;
+        
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.4;
+  transition: 0.3s;
+        margin-top: 20%;
+    
+}
+    .next {
+  background-color: darkgray;
+  color: white;
+        float:right;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius:50%; 
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.4;
+  transition: 0.3s;
+        margin-top: 20%;
+}
+    .next:hover {opacity: 1}
+    .previous:hover {opacity: 1}
+    
+    
+    
+    
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:ghostwhite;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    
+</style>
+
+</head>
+<body>
+<div class="header">
+    
+      <table class="n1"><tr><td ><a target="_blank" href="n1.png">
+      <img src="n1.png" alt="thumbnail4" style="height:35px;width:35px">
+        </a></td><td> <img src="n2.jpg" alt="thumbnail4" style="height:50px;width:50px"></td></tr></table> <h3 class="text" > white<b>panda</b></h3>
+      
+</div>
+    
+    <a href="#" class="previous round"><b>&#8249;</b></a>
+    <a href="#" class="next round"><b>&#8250;</b></a>
+
+    
+    
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">Search</a>
+  <a href="#">Store</a>
+</div>
+
+<div id="main">
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+    
+    
+    <div class="full">
+    <h1 class="text">Welcome to S-Store</h1>
+        <div>
+            <p class="twentypoint">Going shopping is a part of our everyday life. For some people it's a pleasant pastime while for others it's an everyday routine. Some people like doing shopping and they are happy if they can pick up a bargain in the sales, for others yawn while walking along the shelves in a shop. But whether you like shopping or not you have to do it because it's a necessity.</p>
+            
+                
+               
+        </div>
+        <p class="border1">order via ExcelSheet</p>
+        
+
+        
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f1.jpg">
+      <img src="f1.jpg" alt="thumbnail1" style="width:50px;height:50px" class="title">
+    </a><h4><u>Blog/Article
+        </u></h4>
+    <div class="desc">I like it when somebody gets excited about something.It's nice.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    
+      <a target="_blank" href="f2.png">
+        <img src="f2.png" alt="thumbnail2" style="width:50px;height:50px" class="title"> 
+    </a><h4 ><u>Newsletter/Emailer
+        </u></h4>
+    <div class="desc">The Way Get Started Is To Quit Talking And Begin Doing.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f3.jpg">
+      <img src="f3.jpg" alt="thumbnail3" style="width:50px;height=50px" class="title">
+    </a><h4 ><u>Whitepaper
+        </u></h4>
+    <div class="desc">I don't exactly know what I mean by that, but I mean it.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f4.jpg">
+      <img src="f4.jpg" alt="thumbnail4" style="width:50px;height:50px" class="title">
+    </a><h4 ><u>Ebook
+        </u></h4>
+    <div class="desc">Don’t Let Yesterday Take Up Too Much Of Today.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+    
+
+    <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f1.jpg">
+      <img src="f1.jpg" alt="thumbnail1" style="width:50px;height:50px" class="title">
+    </a><h4 ><u>Report/Guide
+        </u></h4>
+    <div class="desc">Don’t Let Yesterday Take Up Too Much Of Today.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f2.png">
+      <img src="f2.png" alt="thumbnail2" style="width:50px;height:50px" class="title">
+    </a><h4 ><u>Product Description
+        </u></h4>
+    <div class="desc">Whether You Think You Can Or Think You Can’t, You’re Right.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f3.jpg">
+      <img src="f3.jpg" alt="thumbnail3" style="width:50px;height=50px" class="title">
+    </a><h4 ><u>Website Content
+        </u></h4>
+    <div class="desc">We Generate Fears While We Sit. We Overcome Them By Action.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f4.jpg">
+      <img src="f4.jpg" alt="thumbnail4" style="width:50px;height:50px" class="title">
+    </a><h4 ><u>Vedio Script
+        </u></h4>
+    <div class="desc">We Generate Fears While We Sit. We Overcome Them By Action.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+    
+    
+ <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f1.jpg">
+      <img src="f1.jpg" alt="thumbnail1" style="width:50px;height:50px" class="title">
+    </a><h4 ><u>Company Profile
+        </u></h4>
+    <div class="desc">Whether You Think You Can Or Think You Can’t, You’re Right.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f2.png">
+      <img src="f2.png" alt="thumbnail2" style="width:50px;height:50px" class="title">
+    </a><h4 ><u>Brochure
+        </u></h4>
+    <div class="desc">Don’t Let Yesterday Take Up Too Much Of Today.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f3.jpg">
+      <img src="f3.jpg" alt="thumbnail3" style="width:50px;height=50px" class="title">
+    </a><h4 ><u>Press Release
+        </u></h4>
+    <div class="desc">I like it when somebody gets excited about something.It's nice.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f4.jpg">
+      <img src="f4.jpg" alt="thumbnail4" style="width:50px;height:50px" class="title">
+    </a><h4 ><u>Ebook
+        </u></h4>
+    <div class="desc">I don't exactly know what I mean by that, but I mean it.</div>
+      <p class="border2">order</p>
+  </div>
+</div>
+    </div>
+    
+<div class="clearfix"></div>
+<div class="footer">
+    <center>
+   <table>
+       <tr>
+           <td><a target="_blank" href="l1.png">
+      <img src="l1.png" alt="thumbnail4" style="width:40px;height:40px">
+               </a></td>
+           <td><a target="_blank" href="l2.png">
+      <img src="l2.png" alt="thumbnail4" style="width:40px;height:40px">
+               </a></td>
+           <td><a target="_blank" href="l3.png">
+      <img src="l3.png" alt="thumbnail4" style="width:50px;height:50px">
+               </a></td>
+           <td><a target="_blank" href="l4.png">
+      <img src="l4.png" alt="thumbnail4" style="width:40px;height:40px">
+               </a></td>
+       </tr>
+    </table>
+    <p class="twentypoint" align="center">Powered by #shubham.shukla <br>
+        All rights reserved</p>
+    </center>
+</div>
+
+
+</body>
+</html>
